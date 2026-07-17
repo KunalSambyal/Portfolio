@@ -13,7 +13,7 @@ export default function Editor() {
                 {/* Left Column - Fixed Width Line Numbers */}
                 <LineNumber />
                 {/* Right Column - Code content wrapper */}
-                <div className="flex-1 pl-4 py-4 overflow-y-auto text-left leading-relaxed text-slate-300">
+                <div className="flex-1 px-4 py-4 overflow-auto text-left leading-relaxed text-slate-300">
                     {activeTab === "skills.tsx" && <SkillsTab />}
 
                     {activeTab === "experience.json" && <ExperienceTab />}

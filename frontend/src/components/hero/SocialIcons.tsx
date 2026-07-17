@@ -5,7 +5,7 @@ export default function SocialIcons() {
     const iconParentStyle =
         "focus-visible:outline-2 focus-visible:outline-cyber-yellow rounded p-1";
     const iconsStyle =
-        "w-5 h-5 text-text-secondary hover:text-white transition-colors";
+        "w-5 h-5 text-text-secondary hover:text-cyber-yellow transition-colors";
     return (
         <div className="flex flex-wrap gap-3">
             <a

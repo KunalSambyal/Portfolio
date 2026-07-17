@@ -1,24 +1,23 @@
 export default function TextContent() {
     return (
         <>
-            <span className="text-cyber-yellow font-mono text-sm tracking-widest uppercase block mb-3">
-                &lt;Hello /&gt;
+            <span className="text-cyber-yellow font-mono text-md md:text-lg lg:text-2xl tracking-widest uppercase block mb-2">
+                &lt;<span className="text-text-primary">Hello</span> /&gt;
             </span>
 
-            <h1 className="text-4xl md:text-6xl font-display font-extrabold text-white mb-2 tracking-tight leading-tight">
-                I'm <span className="text-royal-blue">&#123; </span>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-display font-extrabold text-white mb-2 tracking-tight leading-tight whitespace-nowrap">
+                I'm <span className="text-electric-indigo">&#123; </span>
                 Kunal Sambyal
-                <span className="text-royal-blue"> &#125;</span>
+                <span className="text-electric-indigo"> &#125;</span>
             </h1>
 
             <h2 className="text-xl md:text-2xl font-mono text-cyber-yellow/80 mb-6 font-medium">
-                &lt;Web Developer /&gt;
+                &lt;<span className="text-text-primary">Web Developer </span>
+                /&gt;
             </h2>
 
             <p className="text-text-secondary text-sm md:text-base leading-relaxed mb-8 max-w-md">
-                Computer Science student focused on Backend Development, DSA,
-                and modern web development. Experienced with React, TypeScript,
-                Python, and REST APIs.
+                Building projects. Learning continuously. Sharing the journey.
             </p>
         </>
     );
