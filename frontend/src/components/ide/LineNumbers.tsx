@@ -1,0 +1,9 @@
+export default function LineNumber() {
+    return (
+        <div className="text-right pr-4 border-r border-white/5 select-none text-text-secondary/30 py-4 w-10 shrink-0">
+            {Array.from({ length: 10 }).map((_, i) => (
+                <div key={i}>{i + 1}</div>
+            ))}
+        </div>
+    );
+}

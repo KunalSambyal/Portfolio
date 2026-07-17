@@ -1,6 +1,6 @@
-import Frame from "./components/Frame";
-import Hero from "./components/Hero";
-import Navbar from "./components/Navbar";
+import Frame from "./components/layout/Frame";
+import Hero from "./components/hero/Hero";
+import Navbar from "./components/layout/Navbar";
 
 function App() {
     return (
