@@ -1,3 +1,5 @@
+import IdeWidget from "./IdeWidget";
+
 export default function Hero() {
     const capsuleStyles =
         "border border-white/10 hover:border-white text-text-secondary hover:text-white px-4 py-1.5 rounded-full text-xs font-semibold focus-visible:outline-2 focus-visible:outline-cyber-yellow focus-visible:outline-offset-4 transition-all duration-300 cursor-pointer";
@@ -64,11 +66,8 @@ export default function Hero() {
                     </div>
                 </div>
 
-                {/* Right Column: IDE Mockup Placeholder */}
-                <div className="w-full h-80 rounded-2xl bg-secondary-bg/25 border border-white/5 flex items-center justify-center backdrop-blur-md">
-                    <span className="text-text-secondary font-mono text-sm">
-                        IDE Widget Placeholder{" "}
-                    </span>
+                <div className="w-full">
+                    <IdeWidget />
                 </div>
             </div>
         </section>
