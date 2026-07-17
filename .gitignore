@@ -1,0 +1,11 @@
+# Ignore inspiration images
+*.png
+
+# Ignore markdown planning and context files
+*.md
+
+# Ignore package manager and build outputs inside the frontend directory
+frontend/node_modules/
+frontend/dist/
+frontend/.eslintcache
+frontend/.env.local

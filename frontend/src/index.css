@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+@theme {
+    --color-primary-bg: #0b132b; /* Deep Navy background */
+    --color-secondary-bg: #1c2541; /* Slate-Blue cards */
+    --color-royal-blue: #3a86ff; /* Cobalt highlights */
+    --color-cyber-yellow: #ffd166; /* Accent neon yellow */
+    --color-text-primary: #ffffff; /* Clear white */
+    --color-text-secondary: #8e9aaf; /* Muted body text */
+
+    --font-display: "Outfit", "Inter", sans-serif;
+    --font-mono: "Fira Code", monospace;
+}
