@@ -9,7 +9,7 @@ export default function SkillsTab() {
             />
             <JsonProperty
                 name="frontend"
-                value={["React", "HTML/CSS", "Tailwind CSS"]}
+                value={["React", "HTML", "CSS", "Tailwind CSS"]}
             />
             <JsonProperty name="database" value={["MySQL"]} />
             <JsonProperty

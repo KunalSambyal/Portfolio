@@ -1,4 +1,5 @@
-import { FiGithub, FiLinkedin, FiMail } from "react-icons/fi";
+import { FiMail } from "react-icons/fi";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { BsTwitterX } from "react-icons/bs";
 
 export default function SocialIcons() {
@@ -15,7 +16,7 @@ export default function SocialIcons() {
                 aria-label="GitHub Profile"
                 className={iconParentStyle}
             >
-                <FiGithub className={iconsStyle} />
+                <FaGithub className={iconsStyle} />
             </a>
             <a
                 href="https://www.linkedin.com/in/kuanl-sambyal/"
@@ -24,7 +25,7 @@ export default function SocialIcons() {
                 aria-label="LinkedIn Profile"
                 className={iconParentStyle}
             >
-                <FiLinkedin className={iconsStyle} />
+                <FaLinkedin className={iconsStyle} />
             </a>
             <a
                 href="https://x.com/Kunal_Sambyal"

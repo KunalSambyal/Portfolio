@@ -8,9 +8,9 @@ export default function TabBar() {
         <div className="flex items-center px-4 py-2.5 bg-primary-bg/40 border-b border-white/5 select-none">
             {/* Decorative Mac-style Window Controls */}
             <div className="flex gap-1.5 mr-6 font-sans">
-                <div className="w-2.5 h-2.5 rounded-full bg-red-500/50"></div>
-                <div className="w-2.5 h-2.5 rounded-full bg-yellow-500/50"></div>
-                <div className="w-2.5 h-2.5 rounded-full bg-green-500/50"></div>
+                <div className="w-2.5 h-2.5 rounded-full bg-red-500/70"></div>
+                <div className="w-2.5 h-2.5 rounded-full bg-yellow-500/70"></div>
+                <div className="w-2.5 h-2.5 rounded-full bg-green-500/70"></div>
             </div>
 
             {/* Tab Buttons */}
