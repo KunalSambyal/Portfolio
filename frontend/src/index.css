@@ -1,13 +1,27 @@
 @import "tailwindcss";
 
 @theme {
-    --color-primary-bg: #0b132b; /* Deep Navy background */
-    --color-secondary-bg: #1c2541; /* Slate-Blue cards */
-    --color-royal-blue: #3a86ff; /* Cobalt highlights */
-    --color-cyber-yellow: #ffd166; /* Accent neon yellow */
-    --color-text-primary: #ffffff; /* Clear white */
-    --color-text-secondary: #8e9aaf; /* Muted body text */
+    --color-primary-bg: var(--bg-primary);
+    --color-secondary-bg: var(--bg-secondary);
+    --color-text-primary: var(--text-primary);
+    --color-text-secondary: var(--text-secondary);
+    --color-royal-blue: #3a86ff;
+    --color-cyber-yellow: #ffd166;
 
     --font-display: "Outfit", "Inter", sans-serif;
     --font-mono: "Fira Code", monospace;
+}
+
+:root {
+    --bg-primary: #0b132b; /* Deep Navy background */
+    --bg-secondary: #1c2541; /* Slate-Blue cards */
+    --text-primary: #ffffff; /* Clear white text */
+    --text-secondary: #8e9aaf; /* Muted blue-gray body text */
+}
+
+.light {
+    --bg-primary: #f8fafc; /* Light gray background */
+    --bg-secondary: #ffffff; /* Pure white cards */
+    --text-primary: #0f172a; /* Dark navy headings */
+    --text-secondary: #475569; /* Muted slate body text */
 }
