@@ -25,7 +25,11 @@ export default function Footer() {
                     {/* Left Column: Email Queries Section */}
                     <div className="flex flex-col items-start text-left">
                         <span className="text-cyber-yellow font-mono text-xs md:text-sm tracking-widest uppercase mb-3">
-                            &lt;<span className="text-text-primary font-mono">Queries</span> /&gt;
+                            &lt;
+                            <span className="text-text-primary font-mono">
+                                Queries
+                            </span>{" "}
+                            /&gt;
                         </span>
                         <h2 className="text-text-secondary font-display font-bold text-xs md:text-sm tracking-wider uppercase mb-2">
                             Email me for any queries
@@ -56,7 +60,11 @@ export default function Footer() {
                     {/* Middle Column: Quick Links */}
                     <div className="flex flex-col items-start">
                         <span className="text-cyber-yellow font-mono text-xs md:text-sm tracking-widest uppercase mb-4">
-                            &lt;<span className="text-text-primary font-mono">Navigation</span> /&gt;
+                            &lt;
+                            <span className="text-text-primary font-mono">
+                                Navigation
+                            </span>{" "}
+                            /&gt;
                         </span>
                         <h2 className="text-white font-display font-bold text-sm tracking-wider uppercase mb-3">
                             Quick Links
@@ -94,7 +102,11 @@ export default function Footer() {
                     {/* Right Column: Follow (Text links instead of icons) */}
                     <div className="flex flex-col items-start">
                         <span className="text-cyber-yellow font-mono text-xs md:text-sm tracking-widest uppercase mb-4">
-                            &lt;<span className="text-text-primary font-mono">Socials</span> /&gt;
+                            &lt;
+                            <span className="text-text-primary font-mono">
+                                Socials
+                            </span>{" "}
+                            /&gt;
                         </span>
                         <h2 className="text-white font-display font-bold text-sm tracking-wider uppercase mb-3">
                             Follow
@@ -162,7 +174,7 @@ export default function Footer() {
                         </div>
                     </div>
 
-                    <div className="w-full flex justify-center text-[10px] md:text-xs text-text-secondary/20 font-mono select-none border-t border-white/5 pt-4">
+                    <div className="w-full flex justify-center text-[10px] md:text-xs text-text-secondary/20 font-mono select-none border-t border-white/10 pt-4">
                         <span>
                             kunal.s ~ main * | status: active | deployment:
                             v1.0.0
