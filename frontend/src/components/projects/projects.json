@@ -1,0 +1,35 @@
+[
+    {
+        "title": "Game Library Bay",
+        "description": "A responsive single-page gaming search and filter catalog app. Implemented query parameter persistence for filtering states.",
+        "tech": ["React", "TypeScript", "Tailwind CSS", "REST API"],
+        "githubUrl": "https://github.com/KunalSambyal/Games-Library",
+        "liveUrl": "https://games-library-bay.vercel.app/"
+    },
+    {
+        "title": "Pomodoro Timer",
+        "description": "A highly accessible productivity utility featuring focus/break loops, visual timers, and state persistence with local storage.",
+        "tech": ["React", "TypeScript", "Context API", "Local Storage"],
+        "githubUrl": "https://github.com/KunalSambyal/Pomodoro-Timer",
+        "liveUrl": "https://pomodoro-timer-ks.vercel.app/"
+    },
+    {
+        "title": "Custom PC Build Recommender",
+        "description": "A relational terminal recommendation catalog system that coordinates custom hardware builds and executes CRUD commands.",
+        "tech": ["Python", "MySQL", "Relational Databases"],
+        "githubUrl": "https://github.com/KunalSambyal/Custom-PC-Build"
+    },
+    {
+        "title": "DSA Repository",
+        "description": "A structured code notebook cataloging data structure implementations, algorithmic complexities, and Leetcode solution guides.",
+        "tech": ["Python", "Markdown", "Algorithms", "DSA"],
+        "githubUrl": "https://github.com/KunalSambyal/DSA-python"
+    },
+    {
+        "title": "GitHub Profile Searcher",
+        "description": "An async API profile explorer query utility fetching profile metrics, repositories list, and rendering details dynamically.",
+        "tech": ["JavaScript", "HTML", "CSS", "REST API"],
+        "githubUrl": "https://github.com/KunalSambyal/GitHub-Profile-Searcher",
+        "liveUrl": "https://git-hub-profile-searcher-drab.vercel.app/"
+    }
+]

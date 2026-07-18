@@ -1,12 +1,10 @@
 # Ignore inspiration images
-*.png
+/ideas/
 
 # Ignore markdown planning and context files
 AGENTS.md
 PROJECT_PLAN.md
 DESIGN.md
-
-*.pdf
 
 # Ignore package manager and build outputs inside the frontend directory
 frontend/node_modules/

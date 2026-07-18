@@ -51,3 +51,28 @@
 .custom-scrollbar::-webkit-scrollbar-thumb:hover {
     background: rgba(129, 140, 248, 0.35); /* electric-indigo/35% */
 }
+
+/* Global Browser Scrollbar Styles */
+html {
+    scrollbar-width: auto;
+    scrollbar-color: rgba(129, 140, 248, 0.2) #0b132b;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0b132b; /* Matches primary-bg */
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(129, 140, 248, 0.2); /* electric-indigo/20% */
+    border-radius: 9999px;
+    border: 2px solid #0b132b; /* Floating scrollbar look */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(129, 140, 248, 0.4); /* electric-indigo/40% */
+}

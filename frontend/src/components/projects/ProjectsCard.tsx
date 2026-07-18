@@ -15,7 +15,7 @@ interface ProjectCardProps {
 
 export default function ProjectsCard({ project }: ProjectCardProps) {
     return (
-        <article className="group flex flex-col justify-between p-6 rounded-2xl bg-secondary-bg/20 border border-white/5 backdrop-blur-md hover:border-cyber-yellow/30 hover:bg-secondary-bg/30 hover:-translate-y-1 transition-all duration-300 shadow-xl h-full">
+        <article className="group flex flex-col justify-between p-6 rounded-2xl bg-secondary-bg/20 border border-white/5 backdrop-blur-md hover:border-cyber-yellow/30 hover:bg-secondary-bg/30 hover:-translate-y-1 transition-[transform,border-color,background-color] duration-300 shadow-xl h-full">
             <div>
                 {/* Header: Title and Live Icon link */}
                 <div className="flex justify-between items-start gap-4 mb-3">

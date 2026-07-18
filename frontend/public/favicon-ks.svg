@@ -1,0 +1,22 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffe08a"/>
+      <stop offset="100%" stop-color="#f2a93c"/>
+    </linearGradient>
+  </defs>
+  <g fill="none" stroke="url(#gold)" stroke-width="34" stroke-linecap="round" stroke-linejoin="round">
+    <!-- K stem -->
+    <path d="M 118 140 L 118 372"/>
+    <!-- K upper arm -->
+    <path d="M 118 256 L 236 150"/>
+    <!-- K lower arm, flowing straight into the S curve -->
+    <path d="M 118 256
+             L 236 362
+             C 260 380 300 385 330 372
+             C 380 350 396 320 380 290
+             C 360 255 300 250 270 230
+             C 235 210 235 172 275 155
+             C 320 135 380 150 380 190"/>
+  </g>
+</svg>

@@ -1,6 +1,6 @@
 import { useContext, createContext, useState } from "react";
 
-type Tab = "skills.tsx" | "experience.json" | "about.md";
+export type Tab = "skills.tsx" | "experience.json" | "about.md" | undefined;
 
 interface TabBarContextType {
     activeTab: Tab;

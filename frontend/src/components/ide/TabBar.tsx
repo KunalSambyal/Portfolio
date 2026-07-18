@@ -14,12 +14,14 @@ export default function TabBar() {
             </div>
 
             {/* Tab Buttons */}
-            <div className="flex gap-1.5">
+            <div className="flex gap-1.5" role="tablist">
                 {tabs.map((tab) => {
                     const isActive = activeTab === tab;
                     return (
                         <button
                             key={tab}
+                            role="tab"
+                            aria-selected={isActive}
                             onClick={() => setActiveTab(tab)}
                             className={`px-3 py-1 rounded transition-all duration-200 cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-cyber-yellow ${
                                 isActive

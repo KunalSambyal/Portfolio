@@ -2,7 +2,7 @@ import Frame from "./components/layout/Frame";
 import Hero from "./components/hero/Hero";
 import Navbar from "./components/layout/Navbar";
 import Projects from "./components/projects/Projects";
-import Footer from "./components/layout/Footer";
+import Footer from "./components/footer/Footer";
 import { TabBarProvider } from "./context/TabBarContext";
 
 function App() {
