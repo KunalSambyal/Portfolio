@@ -23,43 +23,40 @@ A state-of-the-art, 100/100 Lighthouse-optimized developer portfolio built with 
 
 ```text
 Portfolio/
-├── DESIGN.md                   # Visual design guidelines & styling rules
-├── PROJECT_PLAN.md             # Technical roadmap & checklists
-├── AGENTS.md                   # AI agent coordination log
-├── README.md                   # This project overview
+├── README.md                           # This project overview
 └── frontend/
-    ├── public/                 # Static assets (Favicons, CV PDF, robots.txt)
+    ├── public/                         # Static assets (Favicons, PDFs, robots.txt)
     └── src/
-        ├── App.tsx             # Root application shell
-        ├── main.tsx            # React application entry point
-        ├── index.css           # Tailwind configuration & global style overrides
+        ├── App.tsx
+        ├── main.tsx
+        ├── index.css                   # Tailwind configuration & global style overrides
         ├── context/
-        │   └── TabBarContext.tsx # Global React context for editor tab switching
+        │   └── TabBarContext.tsx       # Global React context for editor tab switching
         ├── data/
-        │   └── projects.json   # Centralized showcase JSON dataset
+        │   └── projects.json           # Centralized showcase JSON dataset
         └── components/
             ├── layout/
-            │   ├── Frame.tsx   # Viewport layout boundary
-            │   ├── Navbar.tsx  # Keyboard-accessible sticky header
-            │   └── NavLinks.tsx # Shared layout link navigator
+            │   ├── Frame.tsx           # Viewport layout boundary
+            │   ├── Navbar.tsx          # Keyboard-accessible sticky header
+            │   └── NavLinks.tsx        # Shared layout link navigator
             ├── hero/
-            │   ├── Hero.tsx    # Responsive 12-column fold wrapper
-            │   ├── TextContent.tsx # Bio headers & code brackets styling
-            │   ├── SocialIcons.tsx # Accessible social links row
-            │   └── CtaButton.tsx # Capsule interactive CTA button
+            │   ├── Hero.tsx            # Responsive 12-column fold wrapper
+            │   ├── TextContent.tsx     # Bio headers & code brackets styling
+            │   ├── SocialIcons.tsx     # Accessible social links row
+            │   └── CtaButton.tsx       # Capsule interactive CTA button
             ├── ide/
-            │   ├── IdeWidget.tsx # Mock IDE editor outer shell
-            │   ├── TabBar.tsx   # Header file tab selectors
-            │   ├── Editor.tsx   # Active component router
-            │   ├── LineNumbers.tsx # Fixed vertical line numbers column
-            │   ├── CodeElements.tsx # DSL tags syntax coloring helper
-            │   └── content/     # Tab display content (Skills, Experience, About)
+            │   ├── IdeWidget.tsx       # Mock IDE editor outer shell
+            │   ├── TabBar.tsx          # Header file tab selectors
+            │   ├── Editor.tsx          # Active component router
+            │   ├── LineNumbers.tsx     # Fixed vertical line numbers column
+            │   ├── CodeElements.tsx    # DSL tags syntax coloring helper
+            │   └── content/            # Tab display content (Skills, Experience, About)
             └── footer/
-                ├── Footer.tsx   # Sub-footer grid layout coordinator
-                ├── EmailQueries.tsx # Click-to-clipboard email copy utility
-                ├── QuickLinks.tsx # Navigation list links
-                ├── SocialLinks.tsx # Text-based social links
-                └── Copyright.tsx # Copyright text & handcrafted credits
+                ├── Footer.tsx          # Sub-footer grid layout coordinator
+                ├── EmailQueries.tsx    # Click-to-clipboard email copy utility
+                ├── QuickLinks.tsx      # Navigation list links
+                ├── SocialLinks.tsx     # Text-based social links
+                └── Copyright.tsx
 ```
 
 ---
