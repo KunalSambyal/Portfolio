@@ -8,7 +8,7 @@ export default function SocialIcons() {
     const iconsStyle =
         "w-5 h-5 text-text-secondary hover:text-cyber-yellow transition-colors";
     return (
-        <div className="flex flex-wrap gap-3">
+        <div className="flex flex-wrap gap-3 mb-4">
             <a
                 href="https://github.com/KunalSambyal"
                 target="_blank"

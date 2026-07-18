@@ -1,6 +1,11 @@
+import { FiSun } from "react-icons/fi";
+import { useTabBar } from "../../context/TabBarContext";
+
 export default function Navbar() {
+    const { setActiveTab } = useTabBar();
+    
     const linkStyles =
-        "text-text-secondary hover:text-white hover:-translate-y-[1px] focus-visible:text-white focus-visible:outline-2 focus-visible:outline-cyber-yellow focus-visible:outline-offset-4 rounded transition-all duration-200 font-medium text-md lg:text-xl tracking-wide";
+        "text-text-secondary hover:text-cyber-yellow hover:-translate-y-[1px] focus-visible:text-cyber-yellow focus-visible:outline-2 focus-visible:outline-cyber-yellow focus-visible:outline-offset-4 rounded transition-all duration-200 font-medium text-md lg:text-xl tracking-wide";
 
     return (
         <nav className="w-full flex justify-between items-center px-6 md:px-10 py-5 border-b border-white/5 bg-primary-bg/20 backdrop-blur-md sticky top-0 z-50">
@@ -19,12 +24,20 @@ export default function Navbar() {
             {/* Nav Links */}
             <ul className="hidden md:flex items-center gap-10">
                 <li>
-                    <a href="#about" className={linkStyles}>
+                    <a
+                        href="#about"
+                        onClick={() => setActiveTab("about.md")}
+                        className={linkStyles}
+                    >
                         About
                     </a>
                 </li>
                 <li>
-                    <a href="#skills" className={linkStyles}>
+                    <a
+                        href="#skills"
+                        onClick={() => setActiveTab("skills.tsx")}
+                        className={linkStyles}
+                    >
                         Skills
                     </a>
                 </li>
@@ -35,16 +48,13 @@ export default function Navbar() {
                 </li>
             </ul>
 
-            {/* CTA Button */}
-            <div>
-                <a
-                    href="/resume.pdf"
-                    download="KunalSambyalResume.pdf"
-                    className="inline-block bg-cyber-yellow text-primary-bg font-display font-bold text-xs md:text-sm px-5 py-2 rounded-full hover:scale-105 hover:shadow-[0_0_15px_rgba(255,209,102,0.3)] active:scale-95 focus-visible:outline-2 focus-visible:outline-cyber-yellow focus-visible:outline-offset-4 transition-all duration-300 cursor-pointer"
-                >
-                    Resume
-                </a>
-            </div>
+            {/* Theme Button */}
+            <button
+                className="focus-visible:outline-2 focus-visible:outline-cyber-yellow focus-visible:outline-offset-4 rounded p-1.5 text-text-secondary hover:text-white transition-colors cursor-pointer"
+                aria-label="Toggle color theme"
+            >
+                <FiSun className="w-5 h-5" />
+            </button>
         </nav>
     );
 }

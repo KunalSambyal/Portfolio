@@ -27,3 +27,27 @@
     --text-primary: #0f172a; /* Dark navy headings */
     --text-secondary: #475569; /* Muted slate body text */
 }
+
+/* Custom scrollbar styling for IDE and other overflow viewports */
+.custom-scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(129, 140, 248, 0.15) transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background: rgba(129, 140, 248, 0.15); /* electric-indigo/15% */
+    border-radius: 9999px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: rgba(129, 140, 248, 0.35); /* electric-indigo/35% */
+}

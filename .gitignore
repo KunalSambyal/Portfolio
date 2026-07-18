@@ -2,7 +2,9 @@
 *.png
 
 # Ignore markdown planning and context files
-*.md
+AGENTS.md
+PROJECT_PLAN.md
+DESIGN.md
 
 *.pdf
 
