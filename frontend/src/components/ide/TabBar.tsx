@@ -5,16 +5,16 @@ export default function TabBar() {
     const tabs = ["skills.tsx", "experience.json", "about.md"] as const;
 
     return (
-        <div className="flex items-center px-4 py-2.5 bg-primary-bg/40 border-b border-white/5 select-none">
-            {/* Decorative Mac-style Window Controls */}
-            <div className="flex gap-1.5 mr-6 font-sans">
+        <div className="flex items-center px-4 py-2 border-b border-white/5 bg-secondary-bg/30 select-none">
+            {/* Window Controls */}
+            <div className="flex gap-1.5 mr-4 sm:mr-6 shrink-0">
                 <div className="w-2.5 h-2.5 rounded-full bg-red-500/70"></div>
                 <div className="w-2.5 h-2.5 rounded-full bg-yellow-500/70"></div>
                 <div className="w-2.5 h-2.5 rounded-full bg-green-500/70"></div>
             </div>
 
             {/* Tab Buttons */}
-            <div className="flex gap-1.5" role="tablist">
+            <div className="flex gap-1.5 overflow-x-auto no-scrollbar scroll-smooth" role="tablist">
                 {tabs.map((tab) => {
                     const isActive = activeTab === tab;
                     return (

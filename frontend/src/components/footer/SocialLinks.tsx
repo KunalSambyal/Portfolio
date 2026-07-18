@@ -17,16 +17,13 @@ export default function SocialLinks() {
         "text-text-secondary hover:text-cyber-yellow text-sm font-medium transition-colors focus-visible:outline-2 focus-visible:outline-cyber-yellow focus-visible:outline-offset-4 rounded";
     return (
         <div className="flex flex-col items-start">
-            <span className="text-cyber-yellow font-mono text-xs md:text-sm tracking-widest uppercase mb-4">
+            <span className="text-cyber-yellow font-mono text-xs md:text-sm tracking-widest uppercase mb-2">
                 &lt;
                 <span className="text-text-primary font-mono">
                     Socials
                 </span>{" "}
                 /&gt;
             </span>
-            <h2 className="text-white font-display font-bold text-sm tracking-wider uppercase mb-3">
-                Follow
-            </h2>
             <ul className="flex flex-col gap-2.5 text-left">
                 {socialLinks.map((socialLink) => (
                     <li key={socialLink.label}>

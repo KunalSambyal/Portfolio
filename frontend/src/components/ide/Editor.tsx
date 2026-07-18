@@ -10,9 +10,9 @@ export default function Editor() {
         <>
             {/* Editor Body Content */}
             <div className="flex flex-1 overflow-hidden">
-                {/* Left Column - Fixed Width Line Numbers */}
+                {/* Line Numbers */}
                 <LineNumber />
-                {/* Right Column - Code content wrapper */}
+                {/* Code Content Wrapper */}
                 <div className="flex-1 pl-4 py-4 overflow-auto custom-scrollbar text-left leading-relaxed text-slate-300" role="tabpanel">
                     {activeTab === "skills.tsx" && <SkillsTab />}
 

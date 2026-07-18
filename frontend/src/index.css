@@ -76,3 +76,13 @@ html {
 ::-webkit-scrollbar-thumb:hover {
     background: rgba(129, 140, 248, 0.4); /* electric-indigo/40% */
 }
+
+/* Hide scrollbar utility for clean mobile swipeable tab headers */
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}

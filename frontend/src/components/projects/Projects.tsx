@@ -8,7 +8,7 @@ export default function Projects() {
             className="w-full px-6 md:px-10 py-16 md:py-24 border-t border-white/5 bg-transparent"
         >
             <div className="max-w-360 mx-auto">
-                {/* Header Title */}
+                {/* Section Header */}
                 <div className="flex flex-col items-start mb-12">
                     <span className="text-cyber-yellow font-mono text-xs md:text-sm tracking-widest uppercase mb-2">
                         &lt;
@@ -22,7 +22,7 @@ export default function Projects() {
                     </h2>
                 </div>
 
-                {/* Flex Layout: Downward Pyramid */}
+                {/* Projects Grid */}
                 <div className="flex flex-wrap justify-center gap-6 md:gap-8">
                     {projectsData.map((project, idx) => (
                         <div
