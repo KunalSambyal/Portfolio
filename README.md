@@ -13,6 +13,12 @@ A state-of-the-art, 100/100 Lighthouse-optimized developer portfolio built with 
 
 ---
 
+## Preview
+
+![Project Showcase](images/screenshot.png)
+
+---
+
 ## File Structure
 
 ```text
