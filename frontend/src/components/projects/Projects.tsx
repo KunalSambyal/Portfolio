@@ -1,5 +1,5 @@
 import ProjectsCard from "./ProjectsCard";
-import projectsData from "./projects.json";
+import projectsData from "../../data/projects.json";
 
 export default function Projects() {
     return (

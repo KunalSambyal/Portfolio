@@ -1,13 +1,13 @@
 import { useTabBar, type Tab } from "../../context/TabBarContext";
 
-interface quickLinkInterface {
+interface QuickLink {
     label: string;
     link: string;
     file?: Tab;
 }
 
 interface NavLinksProps {
-    parent: string;
+    parent: "navbar" | "footer";
 }
 
 export default function NavLinks({ parent }: NavLinksProps) {
@@ -20,7 +20,7 @@ export default function NavLinks({ parent }: NavLinksProps) {
 
     const linkStyles = `text-text-secondary hover:text-cyber-yellow focus-visible:outline-2 focus-visible:outline-cyber-yellow focus-visible:outline-offset-4 rounded duration-200 font-medium ${parent === "navbar" ? "hover:-translate-y-[1px] focus-visible:text-cyber-yellow transition-all text-md lg:text-xl tracking-wide" : "text-sm transition-colors"}`;
 
-    const quickLinks: quickLinkInterface[] = [
+    const quickLinks: QuickLink[] = [
         { label: "About", link: "#about", file: "about.md" },
         { label: "Skills", link: "#skills", file: "skills.tsx" },
         { label: "Projects", link: "#projects" },
