@@ -24,9 +24,10 @@ export default function ProjectsCard({ project }: ProjectCardProps) {
                             href={project.liveUrl || project.githubUrl}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="focus:outline-none hover:underline decoration-cyber-yellow/40 decoration-2 underline-offset-4"
+                            className="focus:outline-none focus-visible:text-cyber-yellow focus-visible:underline hover:underline decoration-cyber-yellow/40 decoration-2 underline-offset-4"
                         >
                             {project.title}
+                            <span className="sr-only"> (opens in new tab)</span>
                         </a>
                     </h3>
 
@@ -37,9 +38,10 @@ export default function ProjectsCard({ project }: ProjectCardProps) {
                             target="_blank"
                             rel="noopener noreferrer"
                             aria-label={`Live demo of ${project.title}`}
-                            className="text-text-secondary hover:text-white transition-colors focus-visible:outline-2 focus-visible:outline-cyber-yellow focus-visible:outline-offset-4 rounded p-1"
+                            className="text-text-secondary hover:text-white transition-colors focus-ring p-1"
                         >
                             <FiArrowUpRight className="w-5 h-5" />
+                            <span className="sr-only"> (opens in new tab)</span>
                         </a>
                     )}
                 </div>
@@ -70,9 +72,10 @@ export default function ProjectsCard({ project }: ProjectCardProps) {
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label={`GitHub repository for ${project.title}`}
-                        className="inline-flex items-center gap-2 text-xs md:text-sm font-bold text-text-primary hover:text-cyber-yellow transition-colors focus-visible:outline-2 focus-visible:outline-cyber-yellow focus-visible:outline-offset-4 rounded p-1"
+                        className="inline-flex items-center gap-2 text-xs md:text-sm font-bold text-text-primary hover:text-cyber-yellow transition-colors focus-ring p-1"
                     >
                         <FaGithub className="w-5 h-5" />
+                        <span className="sr-only"> (opens in new tab)</span>
                     </a>
                 </div>
             </div>

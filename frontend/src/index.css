@@ -86,3 +86,8 @@ html {
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
 }
+
+/* Global accessible keyboard focus outline utility */
+@utility focus-ring {
+    @apply focus-visible:outline-2 focus-visible:outline-cyber-yellow focus-visible:outline-offset-4 rounded;
+}

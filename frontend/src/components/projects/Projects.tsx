@@ -24,9 +24,9 @@ export default function Projects() {
 
                 {/* Projects Grid */}
                 <div className="flex flex-wrap justify-center gap-6 md:gap-8">
-                    {projectsData.map((project, idx) => (
+                    {projectsData.map((project) => (
                         <div
-                            key={idx}
+                            key={project.title}
                             className="w-full md:w-[calc(50%-16px)] xl:w-[calc(33.33%-22px)] max-w-md xl:max-w-none flex"
                         >
                             <ProjectsCard project={project} />

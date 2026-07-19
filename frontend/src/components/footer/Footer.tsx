@@ -23,7 +23,7 @@ export default function Footer() {
                 <div className="w-full flex flex-col gap-4 border-t border-white/5 pt-8">
                     <Copyright />
 
-                    <div className="w-full flex justify-center text-[10px] md:text-xs text-text-secondary/15 font-mono select-none border-t border-white/10 pt-4">
+                    <div aria-hidden="true" className="w-full flex justify-center text-[10px] md:text-xs text-text-secondary/15 font-mono select-none border-t border-white/10 pt-4">
                         <span>
                             kunal.s ~ main * | status: active | deployment:
                             v1.0.0

@@ -1,8 +1,8 @@
-import { useTabBar } from "../../context/TabBarContext";
+import { useTabBar } from "../../hooks/useTabBar";
 
 export default function TabBar() {
     const { activeTab, setActiveTab } = useTabBar();
-    const tabs = ["skills.tsx", "experience.json", "about.md"] as const;
+    const tabs = ["about.md", "skills.tsx", "experience.json"] as const;
 
     return (
         <div className="flex items-center px-4 py-2 border-b border-white/5 bg-secondary-bg/30 select-none">
@@ -14,16 +14,23 @@ export default function TabBar() {
             </div>
 
             {/* Tab Buttons */}
-            <div className="flex gap-1.5 overflow-x-auto no-scrollbar scroll-smooth" role="tablist">
+            <div
+                className="flex gap-1.5 overflow-x-auto no-scrollbar scroll-smooth"
+                role="tablist"
+            >
                 {tabs.map((tab) => {
                     const isActive = activeTab === tab;
+                    const tabName = tab.split('.')[0];
                     return (
                         <button
                             key={tab}
                             role="tab"
+                            id={`tab-${tabName}`}
+                            aria-controls={`panel-${tabName}`}
                             aria-selected={isActive}
+                            aria-label={`Open ${tab} tab`}
                             onClick={() => setActiveTab(tab)}
-                            className={`px-3 py-1 rounded transition-all duration-200 cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-cyber-yellow ${
+                            className={`px-3 py-1 rounded transition-all duration-200 cursor-pointer focus-visible:outline-none focus-visible:text-cyber-yellow focus-visible:bg-white/5 ${
                                 isActive
                                     ? "bg-white/5 text-cyber-yellow border-b border-cyber-yellow/40"
                                     : "text-text-secondary hover:text-white"

@@ -22,7 +22,9 @@ export default function TextContent() {
 
             <h2 className="text-xl md:text-2xl font-mono text-cyber-yellow/90 mb-6 font-medium">
                 &lt;
-                <span className="text-text-primary/95">Software Developer </span>
+                <span className="text-text-primary/95">
+                    Software Developer{" "}
+                </span>
                 /&gt;
             </h2>
 
@@ -30,7 +32,9 @@ export default function TextContent() {
                 Building projects, learning{" "}
                 <span className="text-cyber-yellow/90 font-mono">&lt;</span>
                 <span className="text-text-primary/95">backend</span>
-                <span className="text-cyber-yellow/90 font-mono">&gt;</span>{" "}
+                <span className="text-cyber-yellow/90 font-mono">
+                    &gt;
+                </span>{" "}
                 development, and improving one commit at a time.
             </p>
         </>

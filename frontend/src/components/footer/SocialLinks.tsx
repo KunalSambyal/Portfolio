@@ -1,20 +1,22 @@
+import { socialData } from "../../data/social";
+
 export default function SocialLinks() {
     const socialLinks = [
         {
             label: "GitHub",
-            link: "https://github.com/KunalSambyal",
+            link: socialData.github,
         },
         {
             label: "Linkedin",
-            link: "https://www.linkedin.com/in/kuanl-sambyal/",
+            link: socialData.linkedin,
         },
         {
             label: "X",
-            link: "https://x.com/Kunal_Sambyal",
+            link: socialData.x,
         },
     ];
     const linkStyles =
-        "text-text-secondary hover:text-cyber-yellow text-sm font-medium transition-colors focus-visible:outline-2 focus-visible:outline-cyber-yellow focus-visible:outline-offset-4 rounded";
+        "text-text-secondary hover:text-cyber-yellow text-sm font-medium transition-colors focus-ring";
     return (
         <div className="flex flex-col items-start">
             <span className="text-cyber-yellow font-mono text-xs md:text-sm tracking-widest uppercase mb-2">
@@ -31,9 +33,11 @@ export default function SocialLinks() {
                             href={socialLink.link}
                             target="_blank"
                             rel="noopener noreferrer"
+                            aria-label={`Visit ${socialLink.label} profile`}
                             className={linkStyles}
                         >
                             {socialLink.label}
+                            <span className="sr-only"> (opens in new tab)</span>
                         </a>
                     </li>
                 ))}

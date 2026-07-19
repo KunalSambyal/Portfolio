@@ -1,9 +1,10 @@
 import { FiCopy, FiCheck } from "react-icons/fi";
 import { useState } from "react";
+import { socialData } from "../../data/social";
 
 export default function EmailQueries() {
     const [copied, setCopied] = useState(false);
-    const email = "kunalsambyal9628@gmail.com";
+    const email = socialData.email;
 
     const handleCopy = async () => {
         try {
@@ -31,7 +32,7 @@ export default function EmailQueries() {
             {/* Copy Button */}
             <button
                 onClick={handleCopy}
-                className="group flex flex-wrap items-center gap-3 text-left focus-visible:outline-2 focus-visible:outline-cyber-yellow focus-visible:outline-offset-4 rounded cursor-pointer"
+                className="group flex flex-wrap items-center gap-3 text-left focus-ring cursor-pointer"
                 aria-label="Copy email address"
             >
                 <span className="text-sm sm:text-base md:text-lg font-display font-bold text-text-primary group-hover:text-cyber-yellow transition-colors duration-200 uppercase break-all">

@@ -1,4 +1,4 @@
-import { useTabBar } from "../../context/TabBarContext";
+import { useTabBar } from "../../hooks/useTabBar";
 import AboutTab from "./content/AboutTab";
 import ExperienceTab from "./content/ExperienceTab";
 import SkillsTab from "./content/SkillsTab";
@@ -13,7 +13,12 @@ export default function Editor() {
                 {/* Line Numbers */}
                 <LineNumber />
                 {/* Code Content Wrapper */}
-                <div className="flex-1 pl-4 py-4 overflow-auto custom-scrollbar text-left leading-relaxed text-slate-300" role="tabpanel">
+                <div 
+                    className="flex-1 pl-4 py-4 overflow-auto custom-scrollbar text-left leading-relaxed text-slate-300" 
+                    role="tabpanel"
+                    id={`panel-${activeTab?.split('.')[0] || "none"}`}
+                    aria-labelledby={`tab-${activeTab?.split('.')[0] || "none"}`}
+                >
                     {activeTab === "skills.tsx" && <SkillsTab />}
 
                     {activeTab === "experience.json" && <ExperienceTab />}

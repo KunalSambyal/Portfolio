@@ -11,7 +11,9 @@ export default function QuickLinks() {
                 /&gt;
             </span>
 
-            <NavLinks parent="footer"/>
+            <nav aria-label="Footer Navigation">
+                <NavLinks parent="footer" />
+            </nav>
         </div>
     );
 }

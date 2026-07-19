@@ -1,13 +1,15 @@
-import { useContext, createContext, useState } from "react";
+import { createContext, useState } from "react";
 
-export type Tab = "skills.tsx" | "experience.json" | "about.md" | undefined;
+export type Tab = "about.md" | "skills.tsx" | "experience.json" | undefined;
 
 interface TabBarContextType {
     activeTab: Tab;
     setActiveTab: (tab: Tab) => void;
 }
 
-const TabBarContext = createContext<TabBarContextType | undefined>(undefined);
+export const TabBarContext = createContext<TabBarContextType | undefined>(
+    undefined,
+);
 
 export function TabBarProvider({ children }: { children: React.ReactNode }) {
     const [activeTab, setActiveTab] = useState<Tab>("skills.tsx");
@@ -17,12 +19,4 @@ export function TabBarProvider({ children }: { children: React.ReactNode }) {
             {children}
         </TabBarContext.Provider>
     );
-}
-
-export function useTabBar() {
-    const context = useContext(TabBarContext);
-    if (!context) {
-        throw new Error("useTabBar must be used within a TabBarProvider");
-    }
-    return context;
 }
