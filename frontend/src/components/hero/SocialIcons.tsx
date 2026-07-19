@@ -38,11 +38,11 @@ export default function SocialIcons() {
     ];
     return (
         <div className="flex flex-wrap gap-3 mb-4">
-            {socialIcons.map((socialIcon, idx) => {
+            {socialIcons.map((socialIcon) => {
                 const isExternal = socialIcon.link.startsWith("http");
                 return (
                     <a
-                        key={idx}
+                        key={socialIcon.label}
                         href={socialIcon.link}
                         target={isExternal ? "_blank" : undefined}
                         rel={isExternal ? "noopener noreferrer" : undefined}

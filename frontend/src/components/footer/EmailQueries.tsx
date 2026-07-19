@@ -38,7 +38,10 @@ export default function EmailQueries() {
                 <span className="text-sm sm:text-base md:text-lg font-display font-bold text-text-primary group-hover:text-cyber-yellow transition-colors duration-200 uppercase break-all">
                     {email}
                 </span>
-                <div className="text-text-secondary group-hover:text-cyber-yellow transition-colors shrink-0">
+                <div 
+                    className="text-text-secondary group-hover:text-cyber-yellow transition-colors shrink-0"
+                    aria-live="polite"
+                >
                     {copied ? (
                         <span className="flex items-center gap-1 text-xs text-cyber-yellow font-bold animate-pulse">
                             <FiCheck className="w-4 h-4" />

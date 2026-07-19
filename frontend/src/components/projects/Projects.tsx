@@ -5,7 +5,7 @@ export default function Projects() {
     return (
         <section
             id="projects"
-            className="w-full px-6 md:px-8 py-16 md:py-24 border-t border-text-primary/10 bg-transparent"
+            className="w-full px-6 md:px-8 pt-16 pb-8 md:pt-24 md:pb-12 border-t border-text-primary/10 bg-transparent"
         >
             <div className="max-w-360 mx-auto">
                 {/* Section Header */}

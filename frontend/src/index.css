@@ -31,10 +31,10 @@
     --bg-secondary: #ffffff; /* Pure white cards */
     --text-primary: #0f172a; /* Dark navy headings */
     --text-secondary: #475569; /* Muted slate body text */
-    --accent-yellow: #d97706; /* Dark amber-yellow for light backgrounds (WCAG compliant) */
-    --accent-purple: #7c3aed; /* Dark violet-purple for light backgrounds (WCAG compliant) */
-    --accent-indigo: #4f46e5; /* Dark indigo for light backgrounds (WCAG compliant) */
-    --accent-green: #059669; /* Dark emerald-green for light backgrounds (WCAG compliant) */
+    --accent-yellow: #b45309;  /* amber-700 */
+    --accent-purple: #6d28d9;  /* violet-700 */
+    --accent-indigo: #4f46e5;  /* unchanged */
+    --accent-green: #047857;   /* emerald-700 */
 }
 
 /* Custom scrollbar styling for IDE and other overflow viewports */
@@ -64,7 +64,7 @@
 /* Global Browser Scrollbar Styles */
 html {
     scrollbar-width: auto;
-    scrollbar-color: rgba(129, 140, 248, 0.2) #0b132b;
+    scrollbar-color: rgba(129, 140, 248, 0.2) var(--bg-primary);
 }
 
 ::-webkit-scrollbar {
@@ -73,13 +73,13 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-    background: #0b132b; /* Matches primary-bg */
+    background: var(--bg-primary); /* Matches primary-bg */
 }
 
 ::-webkit-scrollbar-thumb {
     background: rgba(129, 140, 248, 0.2); /* electric-indigo/20% */
     border-radius: 9999px;
-    border: 2px solid #0b132b; /* Floating scrollbar look */
+    border: 2px solid var(--bg-primary); /* Floating scrollbar look */
 }
 
 ::-webkit-scrollbar-thumb:hover {

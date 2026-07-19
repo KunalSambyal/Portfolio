@@ -8,7 +8,7 @@ export default function Hero() {
     return (
         <section
             id="about"
-            className="w-full flex-1 flex items-center px-6 md:px-8 py-12 md:py-20 bg-transparent"
+            className="w-full px-6 md:px-8 py-12 md:py-20 bg-transparent"
         >
             {/* Responsive Flex Layout */}
             <div className="max-w-360 w-full mx-auto flex flex-col lg:flex-row gap-12 items-center">

@@ -1,4 +1,4 @@
-import { type Tab } from "../../context/TabBarContext";
+import type { Tab } from "../../context/TabBarContextObject";
 import { useTabBar } from "../../hooks/useTabBar";
 
 interface QuickLink {

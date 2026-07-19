@@ -24,7 +24,7 @@ function App() {
                     {/* Main Content Landmark */}
                     <main
                         id="main-content"
-                        className="flex-1 flex flex-col w-full min-w-0"
+                        className="flex flex-col w-full min-w-0"
                     >
                         <Hero />
                         <Projects />

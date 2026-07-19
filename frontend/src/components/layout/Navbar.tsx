@@ -1,12 +1,22 @@
 import { useState, useEffect, useRef } from "react";
 import { FiSun, FiMoon, FiMenu, FiX } from "react-icons/fi";
 import NavLinks from "./NavLinks";
-import { useTheme } from "../../context/ThemeContext";
+import { useTheme } from "../../hooks/useTheme";
 
 export default function Navbar() {
     const { theme, toggleTheme } = useTheme();
     const [isOpen, setIsOpen] = useState(false);
     const navContainerRef = useRef<HTMLDivElement>(null);
+    const hamburgerBtnRef = useRef<HTMLButtonElement>(null);
+    const prevIsOpen = useRef(isOpen);
+
+    // Return focus to hamburger button when closed
+    useEffect(() => {
+        if (prevIsOpen.current && !isOpen) {
+            hamburgerBtnRef.current?.focus();
+        }
+        prevIsOpen.current = isOpen;
+    }, [isOpen]);
 
     // Close on Escape key
     useEffect(() => {
@@ -76,6 +86,7 @@ export default function Navbar() {
 
                     {/* Mobile Menu Hamburger Button */}
                     <button
+                        ref={hamburgerBtnRef}
                         onClick={() => setIsOpen(!isOpen)}
                         className="md:hidden focus-ring p-1.5 text-text-secondary hover:text-text-primary transition-colors cursor-pointer"
                         aria-label={isOpen ? "Close navigation menu" : "Open navigation menu"}

@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { TabBarContext } from "../context/TabBarContext";
+import { TabBarContext } from "../context/TabBarContextObject";
 
 export function useTabBar() {
     const context = useContext(TabBarContext);
