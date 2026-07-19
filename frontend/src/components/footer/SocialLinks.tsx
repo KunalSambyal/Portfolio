@@ -19,9 +19,9 @@ export default function SocialLinks() {
         "text-text-secondary hover:text-cyber-yellow text-sm font-medium transition-colors focus-ring";
     return (
         <div className="flex flex-col items-start">
-            <span className="text-cyber-yellow font-mono text-xs md:text-sm tracking-widest uppercase mb-2">
+            <span className="text-cyber-yellow font-mono font-bold text-xs md:text-sm tracking-widest uppercase mb-2">
                 &lt;
-                <span className="text-text-primary font-mono">
+                <span className="text-text-primary font-mono font-bold">
                     Socials
                 </span>{" "}
                 /&gt;

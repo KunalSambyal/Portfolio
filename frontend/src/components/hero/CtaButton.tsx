@@ -20,7 +20,7 @@ export default function CtaButton({
 
     const primaryStyles = "bg-cyber-yellow text-primary-bg";
     const secondaryStyles =
-        "bg-transparent border border-white/20 text-white hover:bg-white hover:text-primary-bg hover:border-white";
+        "bg-transparent border border-text-primary/20 text-text-primary hover:bg-text-primary hover:text-primary-bg hover:border-text-primary";
 
     const styles = `${baseStyles} ${variant === "primary" ? primaryStyles : secondaryStyles}`;
 

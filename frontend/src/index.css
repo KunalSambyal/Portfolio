@@ -6,9 +6,10 @@
     --color-text-primary: var(--text-primary);
     --color-text-secondary: var(--text-secondary);
     --color-royal-blue: #3a86ff;
-    --color-cyber-yellow: #ffd166;
-    --color-cyber-purple: #c084fc;
-    --color-electric-indigo: #818cf8;
+    --color-cyber-yellow: var(--accent-yellow);
+    --color-cyber-purple: var(--accent-purple);
+    --color-electric-indigo: var(--accent-indigo);
+    --color-cyber-green: var(--accent-green);
 
     --font-display: "Outfit", "Inter", sans-serif;
     --font-mono: "Fira Code", monospace;
@@ -19,6 +20,10 @@
     --bg-secondary: #1c2541; /* Slate-Blue cards */
     --text-primary: #ffffff; /* Clear white text */
     --text-secondary: #8e9aaf; /* Muted blue-gray body text */
+    --accent-yellow: #ffd166; /* Bright yellow for dark backgrounds */
+    --accent-purple: #c084fc; /* Bright lavender-purple for dark backgrounds */
+    --accent-indigo: #818cf8; /* Light indigo for dark backgrounds */
+    --accent-green: #34d399; /* Bright green for dark backgrounds */
 }
 
 .light {
@@ -26,6 +31,10 @@
     --bg-secondary: #ffffff; /* Pure white cards */
     --text-primary: #0f172a; /* Dark navy headings */
     --text-secondary: #475569; /* Muted slate body text */
+    --accent-yellow: #d97706; /* Dark amber-yellow for light backgrounds (WCAG compliant) */
+    --accent-purple: #7c3aed; /* Dark violet-purple for light backgrounds (WCAG compliant) */
+    --accent-indigo: #4f46e5; /* Dark indigo for light backgrounds (WCAG compliant) */
+    --accent-green: #059669; /* Dark emerald-green for light backgrounds (WCAG compliant) */
 }
 
 /* Custom scrollbar styling for IDE and other overflow viewports */

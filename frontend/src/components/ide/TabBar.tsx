@@ -5,7 +5,7 @@ export default function TabBar() {
     const tabs = ["about.md", "skills.tsx", "experience.json"] as const;
 
     return (
-        <div className="flex items-center px-4 py-2 border-b border-white/5 bg-secondary-bg/30 select-none">
+        <div className="flex items-center px-4 py-2 border-b border-text-primary/10 bg-secondary-bg/30 select-none">
             {/* Window Controls */}
             <div className="flex gap-1.5 mr-4 sm:mr-6 shrink-0">
                 <div className="w-2.5 h-2.5 rounded-full bg-red-500/70"></div>
@@ -20,7 +20,7 @@ export default function TabBar() {
             >
                 {tabs.map((tab) => {
                     const isActive = activeTab === tab;
-                    const tabName = tab.split('.')[0];
+                    const tabName = tab.split(".")[0];
                     return (
                         <button
                             key={tab}
@@ -30,10 +30,10 @@ export default function TabBar() {
                             aria-selected={isActive}
                             aria-label={`Open ${tab} tab`}
                             onClick={() => setActiveTab(tab)}
-                            className={`px-3 py-1 rounded transition-all duration-200 cursor-pointer focus-visible:outline-none focus-visible:text-cyber-yellow focus-visible:bg-white/5 ${
+                            className={`px-3 py-1 rounded transition-all duration-200 cursor-pointer focus-visible:outline-none focus-visible:text-cyber-yellow focus-visible:bg-text-primary/5 ${
                                 isActive
-                                    ? "bg-white/5 text-cyber-yellow border-b border-cyber-yellow/40"
-                                    : "text-text-secondary hover:text-white"
+                                    ? "bg-text-primary/5 text-cyber-yellow border-b-2 border-cyber-yellow"
+                                    : "text-text-secondary hover:text-text-primary"
                             }`}
                         >
                             {tab}

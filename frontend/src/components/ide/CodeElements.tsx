@@ -14,7 +14,7 @@ export function CodeStringArray({ values }: { values: string[] }) {
     return (
         <>
             <span className="text-cyber-purple">[</span>
-            <span className="text-emerald-400">
+            <span className="text-cyber-green">
                 {values.map(
                     (val, idx) =>
                         `"${val}"${idx < values.length - 1 ? ", " : ""}`,
@@ -50,7 +50,7 @@ export function JsonProperty({
             {Array.isArray(value) ? (
                 <CodeStringArray values={value} />
             ) : (
-                <span className="text-emerald-400">"{value}"</span>
+                <span className="text-cyber-green">"{value}"</span>
             )}
             {!isLast && <span className="text-text-secondary">,</span>}
         </CodeLine>
@@ -78,7 +78,7 @@ export function JsonObject({
                     <span className="text-electric-indigo font-bold">
                         const{" "}
                     </span>
-                    <span className="text-white">{name}</span>
+                    <span className="text-text-primary">{name}</span>
                     <span className="text-text-secondary"> = </span>
                     <span className="text-cyber-yellow">&#123;</span>
                 </div>

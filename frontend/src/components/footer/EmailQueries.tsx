@@ -18,9 +18,9 @@ export default function EmailQueries() {
 
     return (
         <div className="flex flex-col items-start text-left">
-            <span className="text-cyber-yellow font-mono text-xs md:text-sm tracking-widest uppercase mb-3">
+            <span className="text-cyber-yellow font-mono font-bold text-xs md:text-sm tracking-widest uppercase mb-3">
                 &lt;
-                <span className="text-text-primary font-mono">
+                <span className="text-text-primary font-mono font-bold">
                     Queries
                 </span>{" "}
                 /&gt;

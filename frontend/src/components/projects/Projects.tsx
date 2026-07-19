@@ -5,14 +5,14 @@ export default function Projects() {
     return (
         <section
             id="projects"
-            className="w-full px-6 md:px-10 py-16 md:py-24 border-t border-white/5 bg-transparent"
+            className="w-full px-6 md:px-8 py-16 md:py-24 border-t border-text-primary/10 bg-transparent"
         >
             <div className="max-w-360 mx-auto">
                 {/* Section Header */}
                 <div className="flex flex-col items-start mb-12">
-                    <span className="text-cyber-yellow font-mono text-xs md:text-sm tracking-widest uppercase mb-2">
+                    <span className="text-cyber-yellow font-mono font-bold text-xs md:text-sm tracking-widest uppercase mb-2">
                         &lt;
-                        <span className="text-text-primary font-mono">
+                        <span className="text-text-primary font-mono font-bold">
                             Showcase
                         </span>{" "}
                         /&gt;

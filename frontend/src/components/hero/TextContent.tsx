@@ -1,11 +1,11 @@
 export default function TextContent() {
     return (
         <>
-            <span className="text-cyber-yellow/90 font-semibold font-mono text-md md:text-lg lg:text-2xl tracking-widest uppercase block mb-2">
-                &lt;<span className="text-text-primary/95">Hello</span> /&gt;
+            <span className="text-cyber-yellow font-mono font-bold text-sm md:text-base tracking-widest uppercase mb-2 block">
+                &lt;<span className="text-text-primary">Hello</span> /&gt;
             </span>
 
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-display font-extrabold text-white mb-2 tracking-tight leading-tight sm:whitespace-nowrap">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-display font-extrabold text-text-primary mb-2 tracking-tight leading-tight sm:whitespace-nowrap">
                 <span className="text-2xl sm:text-3xl md:text-4xl lg:text-3xl xl:text-4xl 2xl:text-5xl text-text-primary/95 font-bold mr-3 align-middle">
                     I'm
                 </span>

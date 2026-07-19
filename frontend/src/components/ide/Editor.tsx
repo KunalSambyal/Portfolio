@@ -13,11 +13,11 @@ export default function Editor() {
                 {/* Line Numbers */}
                 <LineNumber />
                 {/* Code Content Wrapper */}
-                <div 
-                    className="flex-1 pl-4 py-4 overflow-auto custom-scrollbar text-left leading-relaxed text-slate-300" 
+                <div
+                    className="flex-1 pl-4 py-4 overflow-auto custom-scrollbar text-left leading-relaxed text-text-primary"
                     role="tabpanel"
-                    id={`panel-${activeTab?.split('.')[0] || "none"}`}
-                    aria-labelledby={`tab-${activeTab?.split('.')[0] || "none"}`}
+                    id={`panel-${activeTab?.split(".")[0] || "none"}`}
+                    aria-labelledby={`tab-${activeTab?.split(".")[0] || "none"}`}
                 >
                     {activeTab === "skills.tsx" && <SkillsTab />}
 

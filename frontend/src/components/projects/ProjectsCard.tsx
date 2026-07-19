@@ -15,7 +15,7 @@ interface ProjectCardProps {
 
 export default function ProjectsCard({ project }: ProjectCardProps) {
     return (
-        <article className="group flex flex-col justify-between px-6 py-7 rounded-2xl bg-secondary-bg/20 border border-white/5 backdrop-blur-md hover:border-cyber-yellow/30 hover:bg-secondary-bg/30 hover:-translate-y-1 transition-[transform,border-color,background-color] duration-300 shadow-xl h-full">
+        <article className="group flex flex-col justify-between px-6 py-7 rounded-2xl bg-secondary-bg/20 border border-text-primary/5 backdrop-blur-md hover:border-cyber-yellow/30 hover:bg-secondary-bg/30 hover:-translate-y-1 transition-[transform,border-color,background-color] duration-300 shadow-xl h-full">
             <div>
                 {/* Title And Live Link */}
                 <div className="flex justify-between items-center gap-4 mb-3">
@@ -38,7 +38,7 @@ export default function ProjectsCard({ project }: ProjectCardProps) {
                             target="_blank"
                             rel="noopener noreferrer"
                             aria-label={`Live demo of ${project.title}`}
-                            className="text-text-secondary hover:text-white transition-colors focus-ring p-1"
+                            className="text-text-secondary hover:text-text-primary transition-colors focus-ring p-1"
                         >
                             <FiArrowUpRight className="w-5 h-5" />
                             <span className="sr-only"> (opens in new tab)</span>
