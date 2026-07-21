@@ -31,10 +31,10 @@
     --bg-secondary: #ffffff; /* Pure white cards */
     --text-primary: #0f172a; /* Dark navy headings */
     --text-secondary: #475569; /* Muted slate body text */
-    --accent-yellow: #b45309;  /* amber-700 */
-    --accent-purple: #6d28d9;  /* violet-700 */
-    --accent-indigo: #4f46e5;  /* unchanged */
-    --accent-green: #047857;   /* emerald-700 */
+    --accent-yellow: #b45309; /* amber-700 */
+    --accent-purple: #6d28d9; /* violet-700 */
+    --accent-indigo: #4f46e5; /* unchanged */
+    --accent-green: #047857; /* emerald-700 */
 }
 
 /* Custom scrollbar styling for IDE and other overflow viewports */
@@ -99,4 +99,9 @@ html {
 /* Global accessible keyboard focus outline utility */
 @utility focus-ring {
     @apply focus-visible:outline-2 focus-visible:outline-cyber-yellow focus-visible:outline-offset-4 rounded;
+}
+
+::selection {
+    background-color: var(--accent-indigo);
+    color: white;
 }
